@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Link, Redirect, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const CategoryContent = (props) => {
   const [data, setData] = useState([]);
-  console.log('hi', props.match.params);
 
   useEffect(() => {
     const { category } = props.match.params;
@@ -17,15 +15,7 @@ const CategoryContent = (props) => {
       .then(
         (res) => {
           if (isActive) {
-            // const arr = res.filter((i) => i.product_type === category);
-            // console.log({ arr });
-            // console.log({ category });
-            console.log(res);
             setData(res);
-            console.log(data);
-            // console.log({ categoryContent });
-            // setCategoryContent(r=>res);
-            // console.log({ categoryContent });
           }
         },
         [category]
@@ -47,7 +37,7 @@ const CategoryContent = (props) => {
         {data.map((item) => (
           <li className="item" key={item.id}>
             <div className="search-recipes-img-container">
-              {/* <Link to={`/recipeDetails/${item.idMeal}`}> */}
+              {/* <Link to={`/productDetails/${data}`}> */}
               <img className="home-recipes-img" src={item.image_link} />
               <p>{item.brand}</p>
               <p>{item.name}</p>

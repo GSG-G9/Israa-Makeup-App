@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Route, Link, Redirect, Switch } from 'react-router-dom';
 import categoriesArray from '../data';
-import MakeupContext from '../context/MakeupContext';
+
 
 const Categories = () => {
   const [category, setCategory] = useState('lipstick');
