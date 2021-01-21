@@ -72,7 +72,8 @@ h1{
 }
 ul {
   list-style-type: none;
-}.home-recipes-container{
+}
+.home-recipes-container{
   position: absolute;
   top: 390px;
   display: flex;
@@ -89,6 +90,7 @@ ul {
   grid-gap :100px; 
   
   width: 60%;
+  
 
 }.home-recipes-img-container{
   width: 200px;
