@@ -37,10 +37,15 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #F9EEE5
+  background-color: #F2F2F2
   ;
   z-index: 1;
   width:100%
+}
+input{
+  height: 50px;
+  width: 300px;
+  margin-top: 150px;
 }
 .nav_link {
   color: #EF8682;
@@ -98,20 +103,26 @@ ul {
   width: 15%;
   color: black;
   margin-left: 50px;
-margin-bottom: 400px;
-height: auto;
+margin-bottom: 300px;
+max-height: 300px;
   font-size: 1.3em;
+
 }
 .colors{
   width:10px;
   height: 10px;
   border-radius: 50%;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-recipes-img-container {
+  transition: box-shadow .3s;
+  width: 300px;
+  height: 200px;
+  margin: 50px;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+}
+.search-recipes-img-container :hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
