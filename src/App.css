@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url(https://www.freepik.com/premium-photo/mirror-with-eye-shadows-powder-brushes-pink-table_3816656.htm#page=1&query=makeup%20background&position=4);
+ 
 }
 
 .App-logo {
@@ -15,20 +15,98 @@
 }
 
 .App-header {
- 
+  background-image: url('./makup2.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #EF8682;
 }
 
 .App-link {
   color: #61dafb;
 }
+.navbar{
+  position: fixed;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F9EEE5
+  ;
+  z-index: 1;
+  width:100%
+}
+.nav_link {
+  color: #EF8682;
+  font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+}
+.nav_item{
+  float: right;
+  display: block;
+  color: #EF8682;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+h1{
+  color: #EF8682; 
+}
+.search-recipes-img-container{
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
 
+}
+ul {
+  list-style-type: none;
+}.home-recipes-container{
+  position: absolute;
+  top: 390px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  
+}
+.recipes-container{
+  position: absolute;
+  top: 320px;
+  display: grid;
+  grid-template-columns: repeat(5, 15%);
+  grid-gap :100px; 
+  
+  width: 60%;
+
+}.home-recipes-img-container{
+  width: 200px;
+  height: 200px;
+ 
+}
+.home-recipes-img{
+  max-width: 100%;
+  
+}
+.item{
+  width: 15%;
+  color: black;
+  margin-left: 50px;
+margin-bottom: 400px;
+height: auto;
+  font-size: 1.3em;
+}
+.colors{
+  width:10px;
+  height: 10px;
+  border-radius: 50%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
